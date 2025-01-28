@@ -10,11 +10,12 @@ class Conductor:
         self.nombre=nombre
         self.apellido=apellido
         self.horarios = []  # Lista para almacenar horarios
+        self.bus_asignado = None
 
     def agregar_horario(self, horario):
         self.horarios.append(horario)
     def __str__(self):
-        return f"ID del Conductor: {self.ID}, Nombre: {self.nombre}, Apellido: {self.apellido}, horario:{self.horarios}"
+        return f"ID del Conductor: {self.ID}, Nombre: {self.nombre}, Apellido: {self.apellido}, horario:{self.horarios}, Bus Asignado: {self.bus_asignado} "
         
     
     

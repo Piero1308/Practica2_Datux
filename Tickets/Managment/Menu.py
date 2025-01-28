@@ -22,7 +22,7 @@ GESTIONE SU TICKET DE BUS
 9)SALIR
 """ 
     
-    conductor=[]
+    lista_conductores=[]
     buses=[]
     while True:
         print(msg)
@@ -35,15 +35,15 @@ GESTIONE SU TICKET DE BUS
             case 3:
                 agregar_ruta_bus(buses)
             case 4:
-                showConductor(conductor)
+                showConductor(lista_conductores)
             case 5:
-                AgregarConductor(conductor)
+                AgregarConductor(lista_conductores)
             case 6:
-                agregar_horario_conductor(conductor)
+                agregar_horario_conductor(lista_conductores)
             case 7:
-                pass
+                Agregar_Horario_Bus(buses)
             case 8:
-                pass
+                asignar_bus_conductor(lista_conductores,buses)
             case 9:
                 print("VUELVA PRONTO")
                 break
